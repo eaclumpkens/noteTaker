@@ -1,0 +1,23 @@
+{
+  "name": "notetaker",
+  "version": "1.0.0",
+  "description": "[![License](https://img.shields.io/badge/license-Other-orange)](https://opensource.org/licenses)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaclumpkens/noteTaker.git"
+  },
+  "author": "eaclumpkens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eaclumpkens/noteTaker/issues"
+  },
+  "homepage": "https://github.com/eaclumpkens/noteTaker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}
