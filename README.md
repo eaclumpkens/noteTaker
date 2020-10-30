@@ -10,7 +10,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Table of Contents
 
-[Demo](#demo)
+[Heroku](#heroku)
 
 [Installation](#installation)
 
@@ -23,10 +23,10 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 [Questions](#questions)
 
 ----
-<a name="demo"></a>
-### Demo
+<a name="heroku"></a>
+### heroku
 
-[video app demo]()
+[heroku-link]()
 
 <a name="installation"></a>
 ### Installation
