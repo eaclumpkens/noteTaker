@@ -35,7 +35,7 @@ In order to utilize the generator you must install node and it's dependencies.
 
 1. `git clone` this repository
 2. `npm init`
-3. `npm i express`, `npm u fs`
+3. `npm i express`, `npm i fs`, `npm i path`
 4. Heroku
 
 <a name="usage"></a>
