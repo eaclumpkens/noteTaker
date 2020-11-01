@@ -10,21 +10,21 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 // FILE ROUTES
-app.get("*", function(req, res) {
-    return res.sendFile(path.join(__dirname, "/index.html"));
+app.get("/", function(req, res) {
+    return res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
 app.get("/notes", function(req, res) {
-    return res.sendFile(path.join(__dirname, "/notes/notes.html"))
+    return res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
 
 app.get("/api/notes", function(req, res) {
-    return res.sendFile(path.join(res.json(__dirname, "/db/db.json")));
+    return res.sendFile(path.join(__dirname, "./db/db.json"));
 });
 
 app.get("/api/notes/:note", function(req, res) {
     
-})
+});
 
 // LISTENING
 
