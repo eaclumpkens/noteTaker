@@ -1,16 +1,17 @@
 {
   "name": "notetaker",
   "version": "1.0.0",
-  "description": "For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.",
-  "main": "app.js",
+  "description": "[![License](https://img.shields.io/badge/license-Other-orange)](https://opensource.org/licenses)",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eaclumpkens/noteTaker.git"
   },
-  "author": "eaclumpkens",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eaclumpkens/noteTaker/issues"
@@ -19,6 +20,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "path": "^0.12.7"
+    "http": "0.0.1-security",
+    "path": "^0.12.7",
+    "shortid": "^2.2.16"
   }
 }
