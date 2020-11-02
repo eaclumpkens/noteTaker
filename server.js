@@ -24,6 +24,23 @@ app.get("/api/notes", function(req, res) {
     return res.sendFile(path.join(__dirname, "./db/db.json"));
 });
 
+app.get("/api/notes/:id", function(req, res) {
+    let data = fs.readFileSync("db/db.json");
+    let array = JSON.parse(data);
+
+    let chosen = req.params.id;
+
+    console.log(chosen);
+
+    for (var i = 0; i < array.length; i++) {
+        if (chosen === array[i].id) {
+            return res.json(array[i]);
+        }
+    }
+
+    return res.json(false);
+})
+
 app.post("/api/notes", function(req, res) {
 	let data = fs.readFileSync("db/db.json");
 	let array = JSON.parse(data);
@@ -42,15 +59,16 @@ app.post("/api/notes", function(req, res) {
 app.delete("/api/notes/:id", (req, res) => {
 	let data = fs.readFileSync("db/db.json");
     let array = JSON.parse(data);
+
     let note = req.params.id;
+    let index = array.indexOf(note);
     
     console.log(array);
 
 	if (!note) {
 		return res.status(400).send("The note with the given id was not found.");
     }
-    
-	const index = array.indexOf(note);
+
 	array.splice(index, 1);
 	data = JSON.stringify(array);
 	fs.writeFileSync("db/db.json", data);
