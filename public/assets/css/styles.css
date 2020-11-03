@@ -88,7 +88,6 @@ html, body {
 }
 
 /* OLD NOTES */
-
 .card h3 {
   font-weight: 300;
   font-size: 105%;
@@ -109,6 +108,8 @@ html, body {
 .list-container .list-group-item:first-child,
 .list-container .card {
   border-top: none;
+  border-left: none;
+  border-right: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }

@@ -26,7 +26,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 <a name="heroku"></a>
 ### Heroku
 
-[heroku-link]()
+[Heroku deployment](https://quick-jot.herokuapp.com/)
 
 <a name="installation"></a>
 ### Installation
@@ -35,7 +35,7 @@ In order to utilize the generator you must install node and it's dependencies.
 
 1. `git clone` this repository
 2. `npm init`
-3. `npm i express`, `npm i fs`, `npm i path`
+3. `npm i express`, `npm i fs`, `npm i path`, `npm i shortid`
 4. Heroku
 
 <a name="usage"></a>
@@ -53,6 +53,9 @@ Single contribution project
 
 ##### App Demo
 ![app-demo]()
+
+##### Code
+![vscode]()
 
 ----
 
