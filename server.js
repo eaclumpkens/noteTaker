@@ -70,7 +70,8 @@ app.delete("/api/notes/:id", (req, res) => {
     }
 
 	array.splice(index, 1);
-	data = JSON.stringify(array);
+    data = JSON.stringify(array);
+    
 	fs.writeFileSync("db/db.json", data);
 	res.send({ msg: "Note deleted from the database!" });
 });

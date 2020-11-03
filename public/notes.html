@@ -5,27 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Note Taker</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"/>
+  <title>Quick Jots</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
 
+  <!-- NAV BAR -->
   <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">Note Taker</a>
+    <a class="navbar-brand" href="/">Quick Jots</a>
     <div class="icons">
       <i class="fas fa-save text-light save-note"></i>
       <i class="fas fa-pen text-light new-note"></i>
     </div>
   </nav>
 
-  <div class="container">
+  <!-- BODY -->
+  <div class="container note-body">
 
     <div class="row">
       <div class="col-4 list-container">
         <div class="card">
+          <h3>click to view jot...</h3>
           <ul class="list-group">
               
           </ul>
@@ -34,8 +38,8 @@
     </div>  
 
     <div class="col-12">
-      <input class="note-title row col-6" placeholder="Note Title" maxlength="28" type="text">
-      <textarea class="note-textarea row col-6" placeholder="Note Text"></textarea>
+      <input class="sub-notes note-title row col-6" placeholder="Jot Title" maxlength="28" type="text">
+      <textarea class="sub-notes note-textarea row col-6" placeholder="Jot here..."></textarea>
     </div>
 
     <div class="row note-buttons">
@@ -48,5 +52,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/assets/js/index.js"></script>
 </body>
-
 </html>

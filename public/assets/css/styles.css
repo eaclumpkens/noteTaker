@@ -1,12 +1,49 @@
 html, body {
+  background-image: url("../images/swirl-background.png");
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.save-note {
-  display: none;
+/* NAV BAR */
+
+.navbar {
+  opacity: 0.95;
+  height: 5rem;
 }
+
+/* INDEX HEADER */
+
+.jumbotron {
+  background: rgba(216, 218, 221, 0.7);
+}
+
+.jumbotron h1 {
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+}
+
+.jumbotron h4 {
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+/* NOTES */
+
+.note-body {
+  background: rgba(216, 218, 221, 0.7);
+  padding: 3rem;
+}
+
+.sub-notes {
+  background: rgb(600, 600, 600, 0.5);
+}
+
+.card {
+  background: rgb(600, 600, 600, 0.1);
+  margin-left: 1rem;
+}
+
 
 .icons i {
   margin-left: 15px;
@@ -20,25 +57,43 @@ html, body {
   width: 100%;
   outline: none;
   border: none;
+  padding: 3rem 1rem;
 }
 
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
-  padding-top: 15px;
+  font-weight: 200;
 }
 
 .note-title {
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
+  font-weight: 200;
 }
 
 .note-title:read-only, .note-textarea:read-only {
   color: #757575;
 }
 
+/* BUTTONS */
+
+.save-note {
+  display: none;
+}
+
+.btn {
+  margin: 1rem;
+}
+
 /* OLD NOTES */
+
+.card h3 {
+  font-weight: 300;
+  font-size: 105%;
+  margin-left: 0.5rem;
+}
 
 .list-container .card {
   border-bottom: none;
@@ -63,9 +118,12 @@ html, body {
   cursor: pointer;
 }
 
+/* NEW NOTES */
+
 .list-container .list-group-item {
   border-left: none;
   border-right: none;
   padding: 20px;
   cursor: pointer;
+  font-weight: 200;
 }
