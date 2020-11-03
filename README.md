@@ -51,9 +51,6 @@ Single contribution project
 <a name="images"></a>
 ### Images
 
-##### Command Line Demo
-![command-line-demo]()
-
 ##### App Demo
 ![app-demo]()
 

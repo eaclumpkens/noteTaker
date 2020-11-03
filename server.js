@@ -4,7 +4,7 @@ const shortid = require("shortid");
 const express = require("express");
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 // DATA PARSER
 app.use(express.urlencoded({extended:true}));
