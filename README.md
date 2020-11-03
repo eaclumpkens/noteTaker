@@ -52,10 +52,7 @@ Single contribution project
 ### Images
 
 ##### App Demo
-![app-demo]()
-
-##### Code
-![vscode]()
+![app-demo](./public/assets/images/app-demo.gif)
 
 ----
 
